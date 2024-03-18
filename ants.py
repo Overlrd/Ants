@@ -175,7 +175,6 @@ class ThrowerAnt(Ant):
 
         while not place.is_hive:
             if dist >= self.lower_bound and dist <= self.upper_bound:
-                print('DEBUG', f"dist is between {self.upper_bound} and {self.lower_bound}")
                 if place.bees:
                     return random_bee(place.bees)
             place = place.entrance
